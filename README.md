@@ -33,11 +33,11 @@ outputs, cost, performance, and other relevant artifacts
     * /jdentities - for extracting entities from job description
 
 ##  Dataset
-Data 1
-- The data for this challenge can be found [here](https://docs.google.com/spreadsheets/d/19N_K6SnIm0FylD2TBs-5y3WeSgdveb3J/edit?usp=sharing&ouid=108085860825615283789&rtpof=true&sd=true).
-Data 2
-- [For development and training](https://github.com/walidamamou/relation_extraction_transformer/blob/main/relations_dev.txt).
-- [For testing and final reporting](https://github.com/walidamamou/relation_extraction_transformer/blob/main/relations_test.txt).
+* Data 1
+   - The data for this challenge can be found [here](https://docs.google.com/spreadsheets/d/19N_K6SnIm0FylD2TBs-5y3WeSgdveb3J/edit?usp=sharing&ouid=108085860825615283789&rtpof=true&sd=true).
+* Data 2
+   - [For development and training](https://github.com/walidamamou/relation_extraction_transformer/blob/main/relations_dev.txt).
+   - [For testing and final reporting](https://github.com/walidamamou/relation_extraction_transformer/blob/main/relations_test.txt).
 ## Project Structure
 - data: Contains the dataset
 - scripts: Contains script codes
