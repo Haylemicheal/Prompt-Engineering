@@ -1,6 +1,9 @@
 import cohere
 from cohere.classify import Example
-co = cohere.Client('gXCLbW64PfL9gOzVPgpYPgFZ8wBFcXJ3yYZj7YqT')
+import os
+from dotenv import load_dotenv
+load_dotenv()
+co = cohere.Client(os.getenv("API_TOKEN"))
 response = co.classify(
   inputs=["this movie was great", "this movie was bad"],
   examples=[
