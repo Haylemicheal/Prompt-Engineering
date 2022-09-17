@@ -17,6 +17,6 @@ class DataLoader:
         Returns:
             data: json file
         """
-        with open('../data/relations_dev.txt') as f:
+        with open(path) as f:
             data = json.load(f)
         return data
