@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import sys, os
 sys.path.append(os.path.abspath(os.path.join('..')))
 from scripts.news_classifier_pipline import Pipeline
-
+from scripts.job_desc_pipeline import Job_Pipeline
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,9 +21,16 @@ def newsscore():
    pred = pipe.pipeline(title, desc)
    return render_template('news.html', prediction=pred)
 
+@app.route('/job')
+def job():
+   return render_template('job_desc_ent.html')
+
 @app.route('/jdentities')
 def job_desc_entities():
-   return render_template('job_desc_ent.html')
+   document = request.args.get('document')
+   pipe = Job_Pipeline()
+   pred = pipe.pipeline(document)
+   return render_template('job_desc_ent.html', prediction=pred)
 
 
 if __name__ == '__main__':
