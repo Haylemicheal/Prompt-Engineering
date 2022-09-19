@@ -2,10 +2,11 @@
 <html>
     <head>
         <title></title>
+        <link rel='stylesheet' type="text/css" href = "{{ url_for('static', filename = 'bootstrap.min.css') }}" />
     </head>
     <body>
         <h1>Home page</h1>
-        <a href="/news">News</a>
-        <a href="/job">Job Description</a>
+        <button type="button" class="btn btn-lg btn-primary"><a href="/news" style="text-decoration: none; color:white;">News</a></button>
+        <button type="button" class="btn btn-lg btn-primary"><a href="/job" style="text-decoration: none; color:white;">Job Description</a></button>
     </body>
 </html>
